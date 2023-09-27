@@ -7,12 +7,10 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
-
 .parent{
     background: lightcoral;
 
 }
-
 /* Container */
 .container{
     margin-left: auto;
@@ -20,7 +18,6 @@ body{
     padding-left: 15px;
     padding-right:15px;
 }
-
 /* Media query */
 /* Small */
 @media (min-width:768px){
@@ -42,6 +39,7 @@ body{
 }
 /* End global rules */
 
+/* Start header */
 .header{
     padding: 20px;
 }
@@ -119,3 +117,4 @@ width: 100%;
 .header .links ul li:not(:last-child) a{
     border-bottom: 1px solid #ddd;
 }
+/* End header */

@@ -1,4 +1,7 @@
 /* Start global rules */
+:root{
+    --main-color:#10cab7
+}
 *{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -91,6 +94,7 @@ width: 100%;
     top: calc(100% + 15px);
     min-width: 200px;
     display: none;
+    z-index: 1;
 }
 .header .links ul::before{
     content: "";
@@ -118,3 +122,32 @@ width: 100%;
     border-bottom: 1px solid #ddd;
 }
 /* End header */
+
+/* Start landing */
+.landing{
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 68px);
+    position: relative;
+}
+.landing .intro-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+}
+
+.landing .intro-text h1{
+    margin: 0;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 50px;
+}
+.landing .intro-text p{
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.8;
+}

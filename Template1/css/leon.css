@@ -266,3 +266,112 @@ width: 100%;
         display: none;
     }
 }
+/* End services */
+
+/* Start portfolio */
+.portfolio{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+.portfolio .portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 100px;
+    padding: 30px;   
+}
+.portfolio .portfolio-content .card{
+    background-color: white;
+}
+.portfolio .portfolio-content .card img{
+    max-width: 100%;
+}
+.portfolio .portfolio-content .card .info{
+    padding: 20px;
+}
+.portfolio .portfolio-content .card h3{
+    margin: 0;
+}
+.portfolio .portfolio-content .card p{
+    line-height: 1.6;
+    color: #777;
+}
+/* End portfolio */
+
+/* Start about */
+.about{
+    padding-top: 60px;
+    padding-bottom: 60px; 
+}
+.about .about-content{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media(max-width:991px){
+    .about .about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.about .about-content .image{
+position: relative;
+width: 250px;
+height: 375px;
+}
+@media(max-width:991px){
+    .about .about-content .image{
+        margin: 0 auto 80px;
+    }
+}
+.about .about-content .image::before{
+    content: "";
+    position: absolute;
+    background: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+}
+.about .about-content .image::after{
+    content: "";
+    position: absolute;
+    width: 132px;
+    height: 292px;
+    border-left: 77px solid var(--main-color);
+    border-bottom: 57px solid var(--main-color);
+    right: -162px;
+    z-index: -1;
+    top: -40px;
+}
+@media(max-width:991px){
+    .about .about-content .image::before{
+        display: none;
+    }
+    .about .about-content .image::after{
+        display: none;
+    }
+}
+.about .about-content img{
+    max-width: 100%;
+}
+.about .about-content .about-text{
+    flex-basis: calc(100% - 500px);
+}
+.about .about-content .about-text p:first-of-type{
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+.about .about-content .about-text hr{
+    display: inline-block;
+    width: 50%;
+    border-color: var(--main-color);
+}
+.about .about-content .about-text p:last-of-type{
+    line-height: 2;
+    color: #777;
+}
